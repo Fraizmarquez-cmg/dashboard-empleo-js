@@ -1,0 +1,113 @@
+/* Estilos generales con fondo oscuro moderno */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0f172a;
+    /* Azul muy oscuro / pizarra */
+    color: #f8fafc;
+    /* Texto claro */
+    margin: 0;
+    padding: 30px 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    color: #38bdf8;
+    /* Azul brillante que resalta */
+    margin-bottom: 8px;
+    font-size: 2.2rem;
+}
+
+header p {
+    color: #94a3b8;
+    /* Gris suave para subtítulos */
+    font-size: 1rem;
+}
+
+/* Controles (Buscador y contador) */
+.controls {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    align-items: center;
+}
+
+#searchInput {
+    padding: 12px 18px;
+    width: 320px;
+    background-color: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #f8fafc;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+#searchInput::placeholder {
+    color: #64748b;
+}
+
+#searchInput:focus {
+    border-color: #38bdf8;
+    box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.2);
+}
+
+.counter {
+    background: #1e293b;
+    border: 1px solid #334155;
+    padding: 10px 16px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #38bdf8;
+}
+
+/* Cuadrícula de tarjetas */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Tarjetas individuales oscuras */
+.card {
+    background: #1e293b;
+    /* Fondo de tarjeta oscuro */
+    padding: 22px;
+    border-radius: 10px;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+    width: 260px;
+    border-left: 5px solid #38bdf8;
+    /* Borde brillante lateral */
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.4);
+}
+
+.card h3 {
+    margin-top: 0;
+    color: #f1f5f9;
+    font-size: 18px;
+}
+
+.card p {
+    font-size: 14px;
+    color: #94a3b8;
+    /* Texto secundario legible */
+    margin: 8px 0;
+}
+
+.card p strong {
+    color: #cbd5e1;
+}
